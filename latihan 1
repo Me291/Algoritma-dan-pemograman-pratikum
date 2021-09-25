@@ -1,0 +1,21 @@
+"""
+@materi : variabel dan pemograman dasar
+@judul : pratikum 1 materi 
+@hari/tanggal : senin, 20210920
+@nim : 065002100026
+@author : Muhammad Tegar Hidayatullah 
+"""
+
+
+
+x = input("masukan namamu:  ") 
+print(" hallo " + x)
+
+x = input("dimana kamu tinggal: ")
+print("waah ternyata kamu tinggal di " + x)
+
+x = input("asal sekolah kamu dari mana: ")
+print("ternyata dari " + x)
+
+x = input("kecamatan kamu dari mana: ")
+print("owh dari  " + x)
