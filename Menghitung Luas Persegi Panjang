@@ -7,7 +7,7 @@
 
 """
 
-print("Konversi Satuan Panjang")
+print("Menghitung Luas Persegi Panjang")
 which = int(input("masukan panjang nya: "))
 luas = int(input("masukan lebar nya: "))
 satuan = input("masukan satuan(meter/inchi) :")
