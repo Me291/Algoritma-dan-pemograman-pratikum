@@ -1,0 +1,44 @@
+"""
+@materi : variabel dan pemograman dasar
+@judul : Menghitung satuan panjang
+@hari/tanggal : kamis, 20210923
+@nim : 065002100022
+@author : Muhammad Tegar Hidayatullah 
+
+"""
+print("Pilihan A Inchi ke meter")
+print("Pilihan B Inchi ke centimeter")
+print("Pilihan C Meter ke Inchi")
+print("Pilihan D Meter ke centimeter")
+print("pilihan E centimeter ke inchi")
+print("pilihan F centimeter ke meter")
+
+
+print("Konversi Satuan Panjang")
+which = input("masukan pilihan nya: ")
+luas = int(input("masukan angka nya: "))
+
+if which == "A" :
+    conv_luas = (luas / 39.370)
+    print(luas,"inchi",conv_luas,"meter")
+    
+elif which == "B" :
+    conv_luas = (luas*2.54)
+    print(luas,"inchi",conv_luas,"centimeter")
+    
+elif which == "C" :
+    conv_luas = (luas*39.370)
+    print(luas,"meter",conv_luas,"inchi")
+    
+elif which == "D" :
+        conv_luas = (luas*100)
+        print(luas,"meter",conv_luas,"centimeter")
+    
+elif which == "E" :
+            conv_luas = (luas/2.54)
+            print(luas,"centimeter",conv_luas,"inchi")
+            
+elif which == "F" :
+            conv_luas = (luas/100)
+            print(luas,"centimeter",conv_luas,"meter")
+
