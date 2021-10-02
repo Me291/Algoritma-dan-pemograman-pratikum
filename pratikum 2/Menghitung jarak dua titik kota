@@ -1,0 +1,29 @@
+"""
+@materi : algoritma dan pemograman
+@judul : Menghitung dua titik jarak kota
+@hari/tanggal : Sabtu, 20211002
+@nim : 065002100022
+@author : Muhammad Tegar Hidayatullah 
+"""
+
+import math 
+
+
+T1 = float(input("masukan lattitude kota pertama: "))
+G1 = float(input("masukan longitude kota pertama:" ))
+T2 = float(input("masukan lattitude kota kedua: "))
+G2 = float(input("masukan longitude kota kedua: "))
+
+
+latt = T1 - G2
+lott = G1 - T2
+
+a = math.sin(latt/2)**2 + math.cos(T1) * math.cos(T2) + math.sin(lott/2)**2
+c = 2 * math.atan(math.sqrt(a))
+R = 6371
+
+D = R * c
+
+print("jadi jarak antara dua titik kota adalah",D,"kilometer")
+
+
