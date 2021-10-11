@@ -1,0 +1,19 @@
+"""
+@materi : algoritma dan pemograman
+@judul : struktur kendali II
+@hari/tanggal : Sabtu,20211009
+@nim : 065002100022
+@author : Muhammad Tegar Hidayatullah 
+"""
+
+
+print("program menghitung struktur kendali II")
+
+n = int(input("masukan angka yang ingin di tentukan: "))
+
+
+for i in range(0, n):
+    for j in range(1, n + 1):
+        print(n, end='')
+    n -= 1
+    print('')
