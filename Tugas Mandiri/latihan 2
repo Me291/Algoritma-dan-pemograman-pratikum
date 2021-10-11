@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+@materi : algoritma dan pemograman
+@judul : Menghitung nilai rata-rata
+@hari/tanggal : Sabtu,20211009
+@nim : 065002100022
+@author : Muhammad Tegar Hidayatullah 
+"""
+
+
+
+print("menghitung rata-rata nilai kelas")
+
+data = int(input("masukan banyaknya jumlah nya: "))
+
+
+array = []
+jumlah = 0 
+
+for x in range(data):
+    nilai = float(input("masukan nilai nya ke-{}: ".format(x+1)))
+    array.append(nilai)
+    
+
+
+print("jadi hasil total dari semuanya adalah :{} ".format(sum(array)))
+print("jadi hasil rata-rata adalah : {}".format(sum(array)/data))
+
