@@ -1,0 +1,55 @@
+"""
+@materi : algoritma dan pemograman
+@judul : menentukan bilangan prima
+@hari/tanggal : senin,08,11,2021
+@nim : 065002100022
+@author : Muhammad Tegar Hidayatullah
+"""
+
+def cekbilangan(bil):
+    if bil == 1:
+        print(f"bilangan {bil} adalah bilangan prima")
+    
+    elif bil == 2:
+        print(f"bilangan {bil} adalah bilangan prima")
+        
+    else:
+       
+        global x 
+        
+        for x in range(2, bil):
+            
+            if bil % x == 0:
+                
+                stat = 0 
+                
+                break
+            
+            else:
+                stat = 1 
+        cekstat(stat)
+        
+def cekstat(stat):
+    
+    if stat == 0:
+        print(f"bilangan {bil} adalah bukan bilangan prima")
+        print(f"{x} kali {bil//x} = {bil}")
+    
+    else:
+        print(f"{bil} adalah bilangan prima")
+
+a = 1
+
+while a == 1:
+   
+    bil = int(input("masukan angkanya : "))
+    cekbilangan(bil)  
+    break     
+    
+    
+bil = int(input("masukan angkanya : "))
+cekbilangan(bil)       
+    
+    
+
+ 
