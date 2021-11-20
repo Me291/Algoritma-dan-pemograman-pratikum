@@ -1,0 +1,20 @@
+"""
+@materi : algoritma dan pemograman
+@judul : Menghitung bilangan pangkat 
+@hari/tanggal : Senin,20211115
+@nim : 065002100022
+@author : Muhammad Tegar Hidayatullah 
+"""
+
+a = int(input("masukan angka: "))
+b = int(input("mw di pangkatkan ke berapa: "))
+
+def pangkat(a,b):
+    
+    if b >= 1 :
+        return a * pangkat(a, b  - 1)
+    
+    return a
+
+hasil = pangkat(a, b)
+print(f"hasil nya adalah  = {hasil}")
