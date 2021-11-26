@@ -1,0 +1,33 @@
+"""
+@materi : algoritma dan pemograman
+@judul : File Hnadling
+@hari/tanggal : Senin,20211115
+@nim : 065002100022
+@author : Muhammad Tegar Hidayatullah 
+"""
+
+def edit():
+    
+    biodata = open("Biodata.txt",'w')
+    biodata.write(str())
+    biodata.close()
+    
+nama = str(input("masukan nama mu: "))
+umur = str(input("masukan umur mu : "))
+alamat = str(input("masukan alamat mu : "))
+email = str(input("masukan email : "))
+dosen = str(input("masukan wali dosen mu : "))
+
+def hasil():
+    
+    baca = open("Biodata.txt",'r')
+    text = baca.read()
+    print(text)
+    baca.close()
+    
+print("\nberikut data kamu")
+print(nama)
+print(umur)
+print(alamat)
+print(email)
+print(dosen)
