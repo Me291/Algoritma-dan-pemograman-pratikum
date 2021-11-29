@@ -6,55 +6,47 @@
 @author : Muhammad Tegar Hidayatullah 
 """
 
-def bubblesort(angka):
-    n = len(angka)
-    
+def bubbleSort(array):
+    n = len(array)
+ 
     for i in range(n):
-        for j in range(0,n - i - 1):
-            
-            if angka[j] > angka [j + 1]:
-                angka[j],angka [j + 1] = angka [j + 1],angka[j]
+ 
+        for j in range(0, n-i-1):
+ 
+            if array[j] > array[j+1] :
+                array[j], array[j+1] = array[j+1], array[j]
                 
-angka = [64,35,21,98,34,54]
-
-bubblesort(angka)
-
-print("hasil urutan nya adalah : ",angka)
-
-
-    
-def binarysearch(angka,l,r,x):
-    
-    if r >= 1:
-        
+def binarySearch(array, l, r, x):
+ 
+    # Check base case
+    if r >= l:
+ 
         mid = l + (r - l) // 2
-        
-        if angka[mid] == 1:
-            return mid 
-        
-        elif angka[mid] >= x:
-            return binarysearch(angka, l, mid-1, x)
-        
+ 
+        if array[mid] == x:
+            return mid
+ 
+        elif array[mid] > x:
+            return binarySearch(array, l, mid-1, x)
+ 
         else:
-            return binarysearch(angka, mid + 1, r, x)
-        
+            return binarySearch(array, mid + 1, r, x)
+ 
     else:
         return -1
 
-
+array = [87, 56, 34, 23, 89, 15, 2, 200, 28, 31]
 x = input("masukan yang dicari: ")
 x = int(x)
 
-bubblesort(angka)
+bubbleSort(array)
 
-result = binarysearch(angka, 0, len(angka)-1, x)
+result = binarySearch(array, 0, len(array)-1, x)
 result = int(result)
-print("Diurutkan jadi:", angka)
+print("Diurutkan jadi:", array)
 
 
 if result != -1:
     print("indeks ditemukan", (result)+1)
 else:
-    print("indeks tidak ditemukan")
-
-        
+    print("indeks tidak di temukan")
