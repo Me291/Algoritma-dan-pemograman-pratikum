@@ -1,0 +1,60 @@
+"""
+@materi : algoritma dan pemograman
+@judul : binary search
+@hari/tanggal : Senin,20211115
+@nim : 065002100022
+@author : Muhammad Tegar Hidayatullah 
+"""
+
+def bubblesort(angka):
+    n = len(angka)
+    
+    for i in range(n):
+        for j in range(0,n - i - 1):
+            
+            if angka[j] > angka [j + 1]:
+                angka[j],angka [j + 1] = angka [j + 1],angka[j]
+                
+angka = [64,35,21,98,34,54]
+
+bubblesort(angka)
+
+print("hasil urutan nya adalah : ",angka)
+
+
+    
+def binarysearch(angka,l,r,x):
+    
+    if r >= 1:
+        
+        mid = l + (r - l) // 2
+        
+        if angka[mid] == 1:
+            return mid 
+        
+        elif angka[mid] >= x:
+            return binarysearch(angka, l, mid-1, x)
+        
+        else:
+            return binarysearch(angka, mid + 1, r, x)
+        
+    else:
+        return -1
+
+
+x = input("masukan yang dicari: ")
+x = int(x)
+
+bubblesort(angka)
+
+result = binarysearch(angka, 0, len(angka)-1, x)
+result = int(result)
+print("Diurutkan jadi:", angka)
+
+
+if result != -1:
+    print("indeks ditemukan", (result)+1)
+else:
+    print("indeks tidak ditemukan")
+
+        
