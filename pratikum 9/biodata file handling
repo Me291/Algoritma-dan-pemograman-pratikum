@@ -1,0 +1,69 @@
+perulangan = 0
+
+while(perulangan == 0 ):
+    
+    print("\n===== Program File Handling =====" )
+    
+    print("\n1.Membuat dan Menulis File")
+    print("2.Membuka file")
+    print("3.Menambahkan Text Pada File")
+    print("4.Keluar Dari Program")
+    
+    pilihan = int(input("\nmasukan pilihan nya (1/2/3/4): "))
+    
+    
+    
+    if pilihan == 1 :
+        
+            file = str(input("masukan nama file : "))
+            nama = str(input("masukan nama mu : "))
+            nim = int(input("masukan nim kamu : "))
+            angkatan = int(input("masukan angkatan mu : "))
+            
+            nama_file = open(f'{file}','w')
+            nama_file.write(str(-1))
+            nama_file.close()
+            print("file berhasil dibuat")
+            
+    elif pilihan == 2 :
+        
+       x = str(input("masukan nama folder : "))
+       
+       nama_file = open(f'{file}','r')
+       nama_file.read()
+       nama_file.close()
+       
+       print("\nNama mu adalah : ",nama)
+       print("Nim kamu adalah : ",nim)
+       print("Angkatan kamu adalah : ",angkatan)
+       
+       
+    elif pilihan == 3 :
+        
+        y = str(input("masukan nama file : "))
+        
+        pilihan1 = str(input("masukan nama sahabat mu : "))
+        catatan = str(input("masukan catatan tambahan kamu : "))
+        
+        nama_file = open(f'{file}',"a")
+        nama_file.write()
+        nama_file.close()
+        
+        print("nama sahabat mu adalah : ",pilihan1)
+        print("catatan tambahan nya yaitu : ",catatan)
+        print("\n catatan berhasil dibuat ")
+        
+    elif pilihan == 4 :
+        
+        print("Terima Kasih Telah Menggunakan Program")
+        break
+    
+       
+
+       
+            
+            
+        
+      
+      
+        
